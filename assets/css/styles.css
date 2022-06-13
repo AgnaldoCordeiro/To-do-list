@@ -1,0 +1,93 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: #a8a5a5;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 5rem;
+}
+
+:first-child {
+  margin-top: 0.5rem
+}
+
+:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 50%;
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background: #ff0000;
+  color: white;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+.new-task-principal {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-task-principal #new-task-i {
+  border-radius: 2rem;
+  width: 400px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+
+}
+
+#new-task-i:focus {
+  background: rgb(199, 199, 202);
+  color: white;
+
+}
+
+#add-task {
+  background: rgb(240, 204, 0);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border-color: rgb(255, 255, 255);
+
+}
+
+#add-task:hover {
+  background: rgb(199, 199, 202);
+  color: white;
+}
+
+.tasks {
+  margin-left: 25%;
+  margin-top: 20px;
+  width: 50%;
+  border-radius: 5px;
+  background: #f50000;
+  font-size: 18px;
+  text-transform: initial;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+.msg {
+  margin-left: 1rem;
+}
+
+:checked+.msg {
+  text-decoration: line-through;
+  color: rgb(0, 255, 42);
+
+}
